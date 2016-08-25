@@ -29,6 +29,6 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 
-config :trot, :port, 4001
+config :trot, :port, System.get_env("PORT")
 config :trot, :router, Coffeebot.Router
 
